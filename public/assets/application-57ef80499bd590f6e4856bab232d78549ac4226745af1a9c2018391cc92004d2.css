@@ -1,3 +1,14 @@
+/* line 5, C:/Users/542/Desktop/EFM/app/assets/stylesheets/home.scss */
+.signin {
+  width: 20%;
+  right: 90px;
+  top: 120px;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 30px 30px 40px 30px;
+  background-color: rgba(255, 255, 255, 0.8);
+  position: absolute;
+}
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
@@ -10,11 +21,12 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
- *= require_tree .
- *= require_self
+
+
  */
 
  /* #244987 */
+
 .wrapper {
   background-image: url("landingimg.jpg");
   /* Full height */
@@ -41,8 +53,7 @@ body {
   position: relative;
   background-color: #66b3ff;
 }
-.signin,
-.signup {
+form {
   width: 20%;
   right: 90px;
   top: 120px;
@@ -76,7 +87,7 @@ h4 {
 #user_password_confirmation {
   border-color: #6d6d6d;
   margin-bottom: 15px;
-  color: black;
+  color: white;
 }
 
 #logo {
