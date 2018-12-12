@@ -1,10 +1,17 @@
 <nav>
   <div class="nav-wrapper">
-    <a href="#" class="center brand-logo">EFM</a>
+    <a href="/" class="left brand-logo" id="logo">EFM</a>
     <ul class="right hide-on-med-and-down">
-      <li><a href="#">Sass</a></li>
-      <li><a href="#">Components</a></li>
-      <li><a href="#">JavaScript</a></li>
+      <li><a href="#">Καταχώρηση</a></li>
+      <li class="is-signed-in">
+        <div>
+          <% if user_signed_in? %>
+            <i id="user-icon" class="small material-icons">account_circle</i>
+            <p id="user-display"><%= current_user.first_name %>
+            <%= link_to "logout", destroy_user_session_path, method: 'DELETE' %>
+          <% end %></p>
+        </div>
+      </li>
     </ul>
   </div>
 </nav>
