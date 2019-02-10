@@ -13,7 +13,7 @@
   <% @users.each do |user| %>
       <tr>
         <% if user.first_name %>
-          <td class="t-name"><%= user.first_name %></td>
+          <td class="t-name"><%= user.first_name %> <%= user.last_name %></td>
         <% else %>
           <td class="t-name">-</td>
         <% end %>
