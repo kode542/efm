@@ -20,13 +20,14 @@
        <td class="t-email"><%= user.email %></td>
        <td class="t-role"><%= user.role %></td>
 
-       <td class="t-actions">
-         <% unless user == current_user %>
-           <%= link_to user_registration_path(user), method: :delete, confirm: "Are you sure to delete?", rel: "nofollow" do %>
-              <i class="material-icons">delete_forever</i>
-           <% end %>
-       </td>
-          <% end %>
+       <!-- <td class="t-actions"> -->
+         <%# <% unless user == current_user %>
+           <%# <%= link_to user_registration_path(user), method: :delete, confirm: "Are you sure to delete?", rel: "nofollow" do %>
+              <!-- <i class="material-icons">delete_forever</i> -->
+           <%# <% end %>
+         <%# <% end %>
+       <!-- </td> -->
+
       </tr>
   <% end %>
     </tbody>
