@@ -1,0 +1,256 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
+ /* #244987 */
+
+.wrapper {
+  /* background-image: url("landingimg.jpg"); */
+  /* Full height */
+  height: 100vh;
+  background-color: #66b3ff;
+
+  /* Center and scale the image nicely */
+  /* background-position: ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1; */
+}
+
+nav {
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  position: absolute;
+}
+
+body {
+  position: relative;
+  background-color: #66b3ff;
+}
+.signin,
+.signup {
+  min-width: 150px;
+  right: 90px;
+  top: 120px;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 30px 30px 40px 30px;
+  background-color: rgba(255, 255, 255, 0.8);
+  position: absolute;
+
+}
+
+h4,
+.signup label,
+.signin label {
+  color: #6d6d6d;
+}
+
+label {
+  font-size: 15px;
+}
+
+h4 {
+  /* border-bottom: 1px solid white;
+  padding-bottom: 20px; */
+  margin-top: 0;
+  margin-bottom: 45px;
+}
+
+#user_email,
+#user_first_name,
+#user_last_name,
+#user_password,
+#user_password_confirmation {
+  border-color: #6d6d6d;
+  margin-bottom: 15px;
+  color: black;
+}
+
+#logo {
+  margin-left: 50px;
+}
+
+body > nav > div > ul > li:nth-child(1) > a {
+
+  padding: 0;
+}
+
+body > nav > div > ul > li:nth-child(2) > a {
+  padding: 0;
+  display: inline;
+}
+
+body > nav > div > ul > li:nth-child(1){
+  padding-right: 20px;
+  border-right: 1px solid white;
+}
+
+body > nav > div > ul > li:nth-child(2){
+  margin-left: 20px;
+  /* margin-right: 20px; */
+}
+
+.seperator {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  background-color: #6d6d6d;
+  height: 1px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.waves-button-input {
+  color: white;
+}
+
+#sign-in-btn,
+#sign-up-btn,
+i.btn {
+  background-color: #204ac3;
+}
+
+#sign-in-btn:hover,
+#sign-up-btn:hover,
+i.btn:hover {
+  background-color: #3460e3;
+}
+
+#user-icon,
+.is-signed-in,
+.is-signed-in p,
+.is-signed-in p a {
+  display: inline;
+}
+
+.is-signed-in {
+  max-height: 65px;
+}
+
+#user-icon {
+  font-size: 35px;
+  margin-right: 15px;
+}
+
+#user-display {
+  margin: 0;
+  display: inline;
+}
+
+.user-status {
+
+}
+
+.user-menu-wrapper {
+  margin-right: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.collapsein li {
+  float: none;
+}
+
+.collapsein {
+  background-color: rgba(255, 255, 255, 0.5);
+  display: none;
+}
+
+.users-table {
+  position: absolute;
+  max-width: 600px;
+  background-color: rgba(255, 255, 255, 0.7);
+  top: 100px;
+  left: 80px;
+  border-radius: 5px;
+  color: #5d5d5d;
+}
+
+.users-table td:nth-of-type(1),
+.users-table td:nth-of-type(2),
+.users-table td:nth-of-type(3),
+.users-table td:nth-of-type(4) {
+  border-left: 1px solid #a6b1d0;
+  border-right: 1px solid #a6b1d0;
+}
+
+th.t-name,
+th.t-email {
+  width: 35%;
+}
+
+th.t-role,
+th.t-actions {
+  width: 15%;
+}
+
+td.t-name,
+td.t-email {
+  width: 35%;
+}
+
+td.t-role,
+td.t-actions {
+  width: 15%;
+}
+
+
+.users-table th {
+  border: 1px solid #a6b1d0;
+  color: #5d5d5d;
+}
+
+.users-table td {
+  color: #3d3d3d;
+}
+
+.users-table p {
+  font-size: 20px;
+  text-align: center;
+  color: #5d5d5d;
+}
+
+.users-table tbody {
+  display: block;
+  height: 400px;
+  overflow: auto;
+}
+
+.users-table thead,
+.users-table tbody tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.users-table thead {
+  width: calc( 100% - 1em )
+}
+
+.users-table table {
+  width: 100%;
+}
+
+.student-form {
+  width: 100px;
+  position: relative;
+  top: 100px;
+  left: 150px;
+}
