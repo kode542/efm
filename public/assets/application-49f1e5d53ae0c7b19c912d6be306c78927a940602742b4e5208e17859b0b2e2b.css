@@ -10,26 +10,26 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
- *= require_tree .
- *= require_self
+
+
  */
 
  /* #244987 */
+
 .wrapper {
-  /* background-image: url("landingimg.jpg"); */
+  background-image: url("landingimg.jpg");
   /* Full height */
   height: 100vh;
-  background-color: #66b3ff;
 
   /* Center and scale the image nicely */
-  /* background-position: ;
+  background-position: ;
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1; */
+  z-index: 1;
 }
 
 nav {
@@ -170,86 +170,4 @@ i.btn:hover {
 .collapsein {
   background-color: rgba(255, 255, 255, 0.5);
   display: none;
-}
-
-.users-table {
-  position: absolute;
-  max-width: 600px;
-  background-color: rgba(255, 255, 255, 0.7);
-  top: 100px;
-  left: 80px;
-  border-radius: 5px;
-  color: #5d5d5d;
-}
-
-.users-table td:nth-of-type(1),
-.users-table td:nth-of-type(2),
-.users-table td:nth-of-type(3),
-.users-table td:nth-of-type(4) {
-  border-left: 1px solid #a6b1d0;
-  border-right: 1px solid #a6b1d0;
-}
-
-th.t-name,
-th.t-email {
-  width: 35%;
-}
-
-th.t-role,
-th.t-actions {
-  width: 15%;
-}
-
-td.t-name,
-td.t-email {
-  width: 35%;
-}
-
-td.t-role,
-td.t-actions {
-  width: 15%;
-}
-
-
-.users-table th {
-  border: 1px solid #a6b1d0;
-  color: #5d5d5d;
-}
-
-.users-table td {
-  color: #3d3d3d;
-}
-
-.users-table p {
-  font-size: 20px;
-  text-align: center;
-  color: #5d5d5d;
-}
-
-.users-table tbody {
-  display: block;
-  height: 400px;
-  overflow: auto;
-}
-
-.users-table thead,
-.users-table tbody tr {
-  display: table;
-  width: 100%;
-  table-layout: fixed;
-}
-
-.users-table thead {
-  width: calc( 100% - 1em )
-}
-
-.users-table table {
-  width: 100%;
-}
-
-.student-form {
-  width: 100px;
-  position: relative;
-  top: 100px;
-  left: 150px;
 }

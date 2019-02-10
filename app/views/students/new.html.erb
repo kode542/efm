@@ -1,0 +1,17 @@
+<div class="student-form">
+  <%= form_for :student do |form| %>
+    <%= form.label :first_name %>
+    <%= form.text_field :first_name %>
+    <%= form.label :last_name %>
+    <%= form.text_field :last_name %>
+    <%= form.label :semester %>
+    <%= form.text_field :semester %>
+    <%= form.label :age %>
+    <%= form.text_field :age %>
+    <%= form.label :phone_number %>
+    <%= form.text_field :phone_number %>
+    <%= form.label :address %>
+    <%= form.text_field :address %>
+    <%= form.submit "Καταχώρηση",:id => 'submit-student', :class => 'btn waves-effect waves-light btn-submit' %>
+  <% end %>
+</div>

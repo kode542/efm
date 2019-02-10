@@ -1,4 +1,4 @@
 class ClassGroup < ApplicationRecord
-  belongs_to :school
+  # belongs_to :school
   has_many :students
 end

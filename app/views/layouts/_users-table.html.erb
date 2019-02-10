@@ -1,0 +1,34 @@
+<div class="users-table">
+  <p>Εγγεγραμμένοι Χρήστες</p>
+  <table class="highlight centered">
+    <thead>
+      <tr>
+        <th class="t-name">Όνομα</th>
+        <th class="t-email">Email</th>
+        <th class="t-role">Ιδιότητα</th>
+        <th class="t-actions">Ενέργειες</th>
+      </tr>
+    </thead>
+    <tbody>
+  <% @users.each do |user| %>
+      <tr>
+        <% if user.first_name %>
+          <td class="t-name"><%= user.first_name %></td>
+        <% else %>
+          <td class="t-name">-</td>
+        <% end %>
+       <td class="t-email"><%= user.email %></td>
+       <td class="t-role"><%= user.role %></td>
+
+       <td class="t-actions">
+         <% unless user == current_user %>
+           <%= link_to user_registration_path(user), method: :delete, confirm: "Are you sure to delete?", rel: "nofollow" do %>
+              <i class="material-icons">delete_forever</i>
+           <% end %>
+       </td>
+          <% end %>
+      </tr>
+  <% end %>
+    </tbody>
+  </table>
+</div>

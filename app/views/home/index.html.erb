@@ -1,6 +1,6 @@
 <div class="wrapper">
   <% if !user_signed_in? %>
-    <div class="signin right">
+    <div class="signin">
 
 
 
@@ -31,4 +31,13 @@
         </div>
     </div>
   <% end %>
+
+  <% if user_signed_in? %>
+    <% if current_user.admin? %>
+      <%= render 'layouts/users-table' %>
+    <% elsif current_user.student? %>
+      <p> <%= current_user.email %> </p>
+    <% end %>
+  <% end %>
+
 </div>
